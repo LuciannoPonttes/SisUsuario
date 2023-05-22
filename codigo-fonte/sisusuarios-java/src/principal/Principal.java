@@ -1,5 +1,8 @@
 package principal;
 
+
+
+
 import view.TelaLogin;
 
 public class Principal {
@@ -9,6 +12,9 @@ public class Principal {
 		TelaLogin telaLogin = new TelaLogin();
 		telaLogin.iniciarTelaLogin();
 		
+		
+		
+	
 	}
 	
 	

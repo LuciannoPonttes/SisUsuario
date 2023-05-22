@@ -5,7 +5,8 @@ public class Usuario {
 	private   String matricula; 
 	private   String nome;
 	private   String email;
-	private   String TipoUsuario; //(Administrador / Comum)
+	private   String tipoUsuario; //(Administrador / Comum)
+	private   String  senha;
 	
 	
 	public String getMatricula() {
@@ -26,12 +27,22 @@ public class Usuario {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	public String getSenha() {
+		return senha;
+	}
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
 	public String getTipoUsuario() {
-		return TipoUsuario;
+		return tipoUsuario;
 	}
 	public void setTipoUsuario(String tipoUsuario) {
-		TipoUsuario = tipoUsuario;
+		this.tipoUsuario = tipoUsuario;
 	}
+	
+	
+	
+	
 
 	
 	

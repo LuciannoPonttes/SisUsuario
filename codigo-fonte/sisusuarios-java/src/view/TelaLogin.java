@@ -8,12 +8,14 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import controller.ControladorTelaLogin;
+
 public class TelaLogin {
 
 	
 	public void iniciarTelaLogin() {
 		
-		String nome = "  USUARIO:";
+		String matricula = "  MATRICULA:";
 		String senha = "  SENHA";
 		
 		
@@ -28,11 +30,11 @@ public class TelaLogin {
 		GridLayout grid = new GridLayout(0,1);
 		panelTelaLogin.setLayout(grid);
 		
-		JLabel labelNome = new JLabel(nome);
-		panelTelaLogin.add(labelNome);
+		JLabel labelMatricula = new JLabel(matricula);
+		panelTelaLogin.add( labelMatricula);
 		
-		JTextField textUsuario = new JTextField(10);
-		panelTelaLogin.add(textUsuario);
+		JTextField textMatricula = new JTextField(10);
+		panelTelaLogin.add(textMatricula);
 		
 		JLabel labelSenha = new JLabel(senha);
 		panelTelaLogin.add(labelSenha);
@@ -46,6 +48,8 @@ public class TelaLogin {
 		frameTelaLogin.add(panelTelaLogin);
 		frameTelaLogin.setVisible(true);
 		
+		ControladorTelaLogin controladorTelaLogin = new ControladorTelaLogin(textMatricula, textSenha);
+		buttonLogin.addActionListener(controladorTelaLogin);
 		
 	}
 	
