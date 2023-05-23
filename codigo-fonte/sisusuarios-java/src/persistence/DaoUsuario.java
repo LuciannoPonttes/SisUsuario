@@ -20,7 +20,7 @@ public class DaoUsuario {
 		
 		FabricaConexaoBancoDados fabricaConexaoBancoDados = new FabricaConexaoBancoDados();
 		
-		String sqlComando = "insert into tb_usuario (matricula, nome, email, tipo_usuario) values (?, ?, ?, ?)";
+		String sqlComando = "insert into tb_usuario (matricula, nome, email, tipo_usuario,senha) values (?, ?, ?, ?,?)";
 		
 		Connection conexaoRecebida = null;
 		PreparedStatement declaracaoComando = null;
@@ -34,6 +34,7 @@ public class DaoUsuario {
 			declaracaoComando.setString(2, usuario.getNome());
 			declaracaoComando.setString(3, usuario.getEmail());
 			declaracaoComando.setString(4, usuario.getTipoUsuario());
+			declaracaoComando.setString(5, usuario.getSenha());
 			
 			declaracaoComando.execute();
 			
@@ -52,7 +53,6 @@ public class DaoUsuario {
 				if(declaracaoComando != null) {
 					declaracaoComando.close();
 				}
-				
 				
 			} catch (Exception e) {
 				System.out.println("Erro ao fechar Conexao!!");

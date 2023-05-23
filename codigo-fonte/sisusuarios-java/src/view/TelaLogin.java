@@ -48,8 +48,11 @@ public class TelaLogin {
 		frameTelaLogin.add(panelTelaLogin);
 		frameTelaLogin.setVisible(true);
 		
-		ControladorTelaLogin controladorTelaLogin = new ControladorTelaLogin(textMatricula, textSenha);
+		ControladorTelaLogin controladorTelaLogin = new ControladorTelaLogin(textMatricula, textSenha,frameTelaLogin);
 		buttonLogin.addActionListener(controladorTelaLogin);
+		
+		
+		
 		
 	}
 	
