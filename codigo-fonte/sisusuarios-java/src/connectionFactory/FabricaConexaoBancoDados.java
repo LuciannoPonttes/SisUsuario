@@ -3,6 +3,8 @@ package connectionFactory;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
+import javax.swing.JOptionPane;
+
 public class FabricaConexaoBancoDados {
 	
 	//private static String USUARIO = "root"; // Nome do usuario
@@ -25,6 +27,7 @@ public class FabricaConexaoBancoDados {
 		} catch (Exception mensagemErro) {
 			conexao = null;
 			System.out.println("Problema ao conectar!!");
+			JOptionPane.showMessageDialog(null, "Erro de banco");
 			System.out.println("#######################");
 			System.out.println(mensagemErro);// Apresenta o erro no console
 			
