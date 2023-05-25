@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 import model.Usuario;
@@ -15,14 +16,14 @@ import view.TelaGerenciaUsuario;
 public class ControladorTelaLogin implements ActionListener {
 
 	JTextField textMatriculaRecebido;	
-	JTextField textSenhaRecebido;	
+	JPasswordField textSenhaRecebido;	
 	JFrame frameTelaLoginRecebido;
 	
 	
 	public ControladorTelaLogin(JTextField textMatriculaRecebido, 
-			JTextField textSenhaRecebido, JFrame frameTelaLogin) {
+			JPasswordField textSenha , JFrame frameTelaLogin) {
 		this.textMatriculaRecebido = textMatriculaRecebido;
-		this.textSenhaRecebido = textSenhaRecebido;
+		this.textSenhaRecebido = textSenha;
 		this.frameTelaLoginRecebido = frameTelaLogin;
 	}
 	

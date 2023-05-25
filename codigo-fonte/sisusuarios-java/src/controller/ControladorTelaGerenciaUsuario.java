@@ -43,7 +43,7 @@ public class ControladorTelaGerenciaUsuario implements ActionListener {
 				if(textRespostaRecebido.getText().equals("2")) {
 					System.out.println("Gerenciar Usuario");
 					telaAdministraUsuario.telaAdmUsuario(usuarioRecebido, frameTelaGerenciaUsuarioRecebido);
-					
+					frameTelaGerenciaUsuarioRecebido.setVisible(false);
 				}
 			}else {
 				JOptionPane.showMessageDialog(null, "Opcao Invalida");

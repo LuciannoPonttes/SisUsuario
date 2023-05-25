@@ -33,6 +33,18 @@ public class RepositorioUsuario implements InterfaceUsuario {
 		return null;
 	}
 
+	@Override
+	public boolean deletarUsuario(Usuario usuario) {
+		
+		return daoUsuario.deletarUsuario(usuario);
+	}
+
+	@Override
+	public boolean alterarUsuario(Usuario usuario) {
+		
+		return daoUsuario.alterarUsuario(usuario);
+	}
+
 	
 	
 	

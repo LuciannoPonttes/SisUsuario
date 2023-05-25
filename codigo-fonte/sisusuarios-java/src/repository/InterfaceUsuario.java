@@ -12,4 +12,7 @@ public interface InterfaceUsuario {
 	
 	public Usuario buscarUsuario(String matricula);
 	
+	public boolean deletarUsuario(Usuario usuario);
+	
+	public boolean alterarUsuario(Usuario usuario);
 }

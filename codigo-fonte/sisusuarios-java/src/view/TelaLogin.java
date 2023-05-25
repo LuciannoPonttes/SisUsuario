@@ -6,6 +6,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 import controller.ControladorTelaLogin;
@@ -39,7 +40,7 @@ public class TelaLogin {
 		JLabel labelSenha = new JLabel(senha);
 		panelTelaLogin.add(labelSenha);
 		
-		JTextField textSenha = new JTextField(10);
+		JPasswordField textSenha = new JPasswordField();
 		panelTelaLogin.add(textSenha);
 		
 		JButton buttonLogin = new JButton("Login");
