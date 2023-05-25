@@ -65,7 +65,7 @@ public class DaoUsuario {
 	
 	public List<Usuario> retornaListaUsuarioDao(){
 		FabricaConexaoBancoDados fabricaConexaoBancoDados = new FabricaConexaoBancoDados();
-		String comandoSqlBuscar = "SELECT * FROM TB_USUARIO";
+		String comandoSqlBuscar = "SELECT * FROM tb_usuario";
 		
 		Connection conexaoRecebida = null;
 		PreparedStatement declaracaoComando = null;
