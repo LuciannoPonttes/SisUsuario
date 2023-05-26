@@ -73,6 +73,9 @@ public class TelaAdministraUsuario {
 		JButton botaoAlterar = new JButton("Alterar");
 		panelAdmUsuario.add(botaoAlterar);
 		
+		JButton botaoGerarPdf = new JButton("Gerar PDF");
+		panelAdmUsuario.add(botaoGerarPdf);
+		
 		JButton botaoVoltar = new JButton("Voltar");
 		panelAdmUsuario.add(botaoVoltar);
 		
@@ -87,6 +90,7 @@ public class TelaAdministraUsuario {
 		botaoAlterar.addActionListener(controllerTelaAdministraUsuario);
 		botaoDeletar.addActionListener(controllerTelaAdministraUsuario);
 		botaoVoltar.addActionListener(controllerTelaAdministraUsuario);
+		botaoGerarPdf.addActionListener(controllerTelaAdministraUsuario);
 	}
 	
 	

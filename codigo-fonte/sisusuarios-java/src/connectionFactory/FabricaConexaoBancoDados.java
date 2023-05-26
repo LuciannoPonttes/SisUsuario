@@ -10,7 +10,7 @@ public class FabricaConexaoBancoDados {
 	//private static String USUARIO = "root"; // Nome do usuario
 	private static String USUARIO = "uzs11jxcsg3ojqdr"; // Nome do usuario
 	//private static String SENHA = "root";//Senha do usuario
-	private static String SENHA = "8VYoUALExdUUvN9gbwck";//Senha do usuario
+	private static String SENHA = "j1Ogp1GLrDtYIcfiPbqf";//Senha do usuario
 	
 	//private static String BANCO_URL = "jdbc:mysql://localhost:3306/db_usuarios?useTimezone=true&serverTimezone=UTC";//URL DO BANCO
 	private static String BANCO_URL = "jdbc:mysql://b9z95uxaicqeqn3anzj9-mysql.services.clever-cloud.com:3306/b9z95uxaicqeqn3anzj9?useTimezone=true&serverTimezone=UTC";//URL DO BANCO

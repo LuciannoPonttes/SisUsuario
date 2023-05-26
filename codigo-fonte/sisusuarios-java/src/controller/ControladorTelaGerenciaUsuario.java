@@ -8,6 +8,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 import model.Usuario;
+import service.GerarPdf;
 import view.TelaAdministraUsuario;
 import view.TelaCadastroUsuario;
 
@@ -29,12 +30,15 @@ public class ControladorTelaGerenciaUsuario implements ActionListener {
 	TelaCadastroUsuario cadastroUsuario = new TelaCadastroUsuario();
 	
 	TelaAdministraUsuario telaAdministraUsuario = new TelaAdministraUsuario();
+	
+	GerarPdf gerarPdf = new GerarPdf();
 
 	@Override
 	public void actionPerformed(ActionEvent botaoPressionado) {
 		
 		if(botaoPressionado.getActionCommand().equals("Enviar")) {
-			if(textRespostaRecebido.getText().equals("1") || textRespostaRecebido.getText().equals("2") ) { 
+			if(textRespostaRecebido.getText().equals("1") ||
+					textRespostaRecebido.getText().equals("2") || textRespostaRecebido.getText().equals("3") ) { 
 				if(textRespostaRecebido.getText().equals("1")) {
 					System.out.println("botao enviar apertado");
 					cadastroUsuario.cadastrarUsuario(usuarioRecebido, frameTelaGerenciaUsuarioRecebido);
@@ -45,6 +49,7 @@ public class ControladorTelaGerenciaUsuario implements ActionListener {
 					telaAdministraUsuario.telaAdmUsuario(usuarioRecebido, frameTelaGerenciaUsuarioRecebido);
 					frameTelaGerenciaUsuarioRecebido.setVisible(false);
 				}
+				
 			}else {
 				JOptionPane.showMessageDialog(null, "Opcao Invalida");
 			}

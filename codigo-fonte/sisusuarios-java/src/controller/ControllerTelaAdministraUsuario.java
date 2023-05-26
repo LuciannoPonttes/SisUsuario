@@ -10,6 +10,7 @@ import javax.swing.JTextField;
 import model.Usuario;
 import persistence.DaoUsuario;
 import repository.RepositorioUsuario;
+import service.GerarPdf;
 import view.TelaAlterarUsuario;
 
 public class ControllerTelaAdministraUsuario implements ActionListener {
@@ -30,6 +31,7 @@ public class ControllerTelaAdministraUsuario implements ActionListener {
 	RepositorioUsuario repositorioUsuario = new RepositorioUsuario();
 	TelaAlterarUsuario telaAlterarUsuario = new TelaAlterarUsuario();
 
+	GerarPdf gerarPdf = new GerarPdf();
 
 	@Override
 	public void actionPerformed(ActionEvent botaoPressionado) {
@@ -61,7 +63,10 @@ public class ControllerTelaAdministraUsuario implements ActionListener {
 		case "Voltar":
 			frameMenuUsuario.setVisible(true);
 			frametelaAdmUsuario.setVisible(false);
+		case "Gerar PDF":
+			gerarPdf.gerarPdfUsuario();
 		}
+		
 
 	}
 	
